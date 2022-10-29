@@ -1,0 +1,48 @@
+version: 1
+
+disable_existing_loggers: False
+
+formatters:
+    default:
+        format: "%(asctime)s — %(name)s — %(levelname)s — %(funcName)s:%(lineno)d — %(message)s"
+        datefmt: '%Y-%m-%d %H:%M:%S'
+    simple:
+        format: "%(message)s"
+
+handlers:
+    console_handler:
+        class: logging.StreamHandler
+        level: DEBUG
+        formatter: simple
+
+    debug_file_handler:
+        class: logging.handlers.TimedRotatingFileHandler
+        level: DEBUG
+        filename: ${core.log_base_path}/debug.log
+        when: 'midnight'
+        backupCount: 4
+        encoding: utf8
+        formatter: default
+        
+    warn_file_handler:
+        class: logging.handlers.TimedRotatingFileHandler
+        level: WARN
+        filename: ${core.log_base_path}/warn.log
+        when: 'midnight'
+        backupCount: 4
+        encoding: utf8
+        formatter: default
+
+root:
+    level: WARN
+    handlers:
+        - warn_file_handler
+    propogate: yes
+    
+loggers:
+    ta_lib:
+        level: DEBUG
+        handlers:
+            - console_handler
+            - debug_file_handler
+        propogate: yes

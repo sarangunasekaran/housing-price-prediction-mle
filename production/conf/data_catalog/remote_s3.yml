@@ -1,0 +1,6 @@
+datasets:
+  housing_raw:
+    format: csv
+    uri: s3://tiger-mle-playground/datasets/raw/housing/housing.csv
+    credential_id: aws_tiger_user
+    driver_params: {}

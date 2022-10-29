@@ -1,0 +1,46 @@
+jobs:
+  - name: data-cleaning
+    stages:
+      - name: "clean-base-tables"
+        tasks:
+          - name: "product"
+            params: {}
+          - name: "orders"
+            params: {}
+
+      - name: "clean-derivative-tables"
+        tasks:
+          - name: "sales"
+            params: {}
+      - name: "train-test-split"
+        tasks:
+          - name: "train-test"
+            params:
+              target: unit_price
+              test_size: 0.2
+
+  - name: feat-engg
+    stages:
+      - name: "feature-pipelines"
+        tasks:
+          - name: "transform-features"
+            params:
+              outliers:
+                method: mean
+                drop: False
+              sampling_fraction: 0.1
+
+  - name: model-gen
+    stages:
+      - name: "model-creation"
+        tasks:
+          - name: "train-model"
+            params:
+              sampling_fraction: 0.1
+
+  - name: model-eval
+    stages:
+      - name: "model-predict"
+        tasks:
+          - name: "score-model"
+            params: {}

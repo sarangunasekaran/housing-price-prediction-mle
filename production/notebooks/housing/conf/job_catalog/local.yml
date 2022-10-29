@@ -1,0 +1,40 @@
+jobs:
+  - name: data-cleaning
+    stages:
+        - name: 'clean-base-tables'
+          tasks:
+            - name: 'housing'
+              params: {}
+              
+        - name: 'train-test-split'
+          tasks:
+            - name: 'train-test'
+              params:
+                target: median_house_value,
+                test_size: 0.2
+              
+  - name: feat-engg
+    stages:
+        - name: 'feature-pipelines'
+          tasks:
+            - name: 'transform-features'
+              params: 
+                outliers: 
+                  method: percentile
+                  lb: 0.01
+                  ub: 0.99
+                  drop: True
+
+  - name: model-gen
+    stages:
+        - name: 'model-creation'
+          tasks:
+            - name: 'train-model'
+              params: {}
+
+  - name: model-eval
+    stages:
+        - name: 'model-predict'
+          tasks:
+            - name: 'score-model'
+              params: {}
