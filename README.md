@@ -12,4 +12,4 @@ One day, he comes across an article about a new machine-learning technique that 
 
 In the end, the data scientist uses this new technique to predict median house values in Californian districts with more accuracy than before.
 
-Note: The idea of narrating the project in a storyplot is to quickly identify the importance of the project and it will be helpful to remember.
+Note: The idea of narrating the project in a storyplot is to quickly identify the importance of the project and it will be helpful to remember. Hope this helps :)
