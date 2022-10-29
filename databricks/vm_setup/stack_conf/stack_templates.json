@@ -1,0 +1,63 @@
+# Single Natebook
+{
+  "name": "CT-full-stack",
+  "resources":[
+    {
+      "id": "template_single_notebook",
+      "service": "workspace",
+      "properties": {
+        "source_path": "<notebook_path>/notebook.ipynb",
+        "path": "/Users/<user_name>@tigeranalytics.com/notebook.ipynb",
+        "object_type": "NOTEBOOK"
+      }
+    }
+  ]
+}
+
+# Notebook Directory
+{
+  "name": "CT-full-stack",
+  "resources":[
+    {
+      "id": "01_setup",
+      "service": "workspace",
+      "properties": {
+        "source_path": "<notebook_directory_path>/01_setup",
+        "path": "/Users/<user_name>@tigeranalytics.com/Code-Templates/01_setup",
+        "object_type": "DIRECTORY"
+      }
+    }
+  ]
+}
+
+# Single file to DBFS
+{
+  "name": "CT-full-stack",
+  "resources":[
+    {
+      "id": "ct_deploy",
+      "service": "dbfs",
+      "properties": {
+        "source_path": "<file_path>/filename",
+        "path": "dbfs:/FileStore/<target_file_path>/filename",
+        "is_dir": false
+      }
+    }
+  ]
+}
+
+# Directory to DBFS
+{
+  "name": "CT-full-stack",
+  "resources":[
+    {
+      "id": "ct_deploy",
+      "service": "dbfs",
+      "properties": {
+        "source_path": "<dir_path>/deploy",
+        "path": "dbfs:/FileStore/<target_dir_path>/deploy",
+        "is_dir": true
+      }
+    }
+  ]
+}

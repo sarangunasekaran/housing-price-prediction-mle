@@ -1,0 +1,83 @@
+{
+  "cli_version": "0.9.1",
+  "deployed_resources": [
+    {
+      "databricks_id": {
+        "path": "/Users/vinay.kumar@tigeranalytics.com/Code-Templates/01_setup"
+      },
+      "id": "01_setup",
+      "service": "workspace"
+    },
+    {
+      "databricks_id": {
+        "path": "/Users/vinay.kumar@tigeranalytics.com/Code-Templates/02_delta"
+      },
+      "id": "02_delta",
+      "service": "workspace"
+    },
+    {
+      "databricks_id": {
+        "path": "/Users/vinay.kumar@tigeranalytics.com/Code-Templates/03_reference_notebooks"
+      },
+      "id": "reference_notebooks",
+      "service": "workspace"
+    },
+    {
+      "databricks_id": {
+        "path": "/Users/vinay.kumar@tigeranalytics.com/Code-Templates/03_reference_notebooks/classification"
+      },
+      "id": "notebooks_classification",
+      "service": "workspace"
+    },
+    {
+      "databricks_id": {
+        "path": "dbfs:/FileStore/Git/code-templates/deploy"
+      },
+      "id": "ct_deploy",
+      "service": "dbfs"
+    },
+    {
+      "databricks_id": {
+        "path": "dbfs:/FileStore/Git/code-templates/notebooks"
+      },
+      "id": "ct_notebooks",
+      "service": "dbfs"
+    },
+    {
+      "databricks_id": {
+        "path": "dbfs:/FileStore/Git/code-templates/production"
+      },
+      "id": "ct_production",
+      "service": "dbfs"
+    },
+    {
+      "databricks_id": {
+        "path": "dbfs:/FileStore/Git/code-templates/src"
+      },
+      "id": "ct_src",
+      "service": "dbfs"
+    },
+    {
+      "databricks_id": {
+        "path": "dbfs:/FileStore/Git/code-templates/setup.cfg"
+      },
+      "id": "ct_setup_cfg",
+      "service": "dbfs"
+    },
+    {
+      "databricks_id": {
+        "path": "dbfs:/FileStore/Git/code-templates/setup.py"
+      },
+      "id": "ct_setup_py",
+      "service": "dbfs"
+    },
+    {
+      "databricks_id": {
+        "path": "dbfs:/FileStore/Git/code-templates/tasks.py"
+      },
+      "id": "ct_tasks_py",
+      "service": "dbfs"
+    }
+  ],
+  "name": "CT-full-stack"
+}

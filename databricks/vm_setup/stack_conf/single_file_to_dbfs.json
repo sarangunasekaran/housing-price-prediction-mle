@@ -1,0 +1,14 @@
+{
+  "name": "CT-full-stack",
+  "resources":[
+    {
+      "id": "ct_core_utils",
+      "service": "dbfs",
+      "properties": {
+        "source_path": "D:/Projects/Git/cloud_code_templates/Databricks/src/code-templates/notebooks/reference/scripts.py",
+        "path": "dbfs:/FileStore/Git/code-templates/notebooks/reference/scripts.py",
+        "is_dir": false
+      }
+    }
+  ]
+}

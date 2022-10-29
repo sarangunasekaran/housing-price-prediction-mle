@@ -1,0 +1,14 @@
+{
+  "name": "data-stack",
+  "resources": [
+    {
+      "id": "data",
+      "service": "dbfs",
+      "properties": {
+        "source_path": "D:/code-templates/data",
+        "path": "dbfs:/FileStore/code-templates/data",
+        "is_dir": true
+      }
+    }
+  ]
+}

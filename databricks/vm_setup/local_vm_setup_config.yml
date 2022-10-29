@@ -1,0 +1,18 @@
+## This config file will be used to local machine
+# 1. Cloning right branches of TigerML and code-templates
+# 2. Setting up Databricks - Stack CLI
+# 3. Setting Databricks-Connect
+
+# Path to direction CT_on_Databricks. This is local databricks path in VM which is to be synced to databricks. Example "D:/code-templates/databricks_archive/code-templates/databricks"
+git_repo_path: 
+
+## Databricks Setup
+# databricks_token - This token can be generated from databricks account and is need to setup stack CLI
+# dbfs_setup_path - This is where all the setup will be placed in databricks. This is usually dbfs location. Example "/dbfs/FileStore/code-templates"
+# databricks_host - The Databricks URL
+databricks_token: 
+dbfs_setup_path: 
+databricks_host: 
+cluster_id : 
+org_id: 
+port: 

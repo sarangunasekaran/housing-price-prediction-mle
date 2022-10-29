@@ -1,0 +1,13 @@
+{
+  "cli_version": "0.9.1",
+  "deployed_resources": [
+    {
+      "databricks_id": {
+        "path": "dbfs:/FileStore/Git/code-templates/notebooks/reference/scripts.py"
+      },
+      "id": "ct_core_utils",
+      "service": "dbfs"
+    }
+  ],
+  "name": "CT-full-stack"
+}

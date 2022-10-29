@@ -1,0 +1,104 @@
+{
+  "name": "CT-full-stack",
+  "resources": [
+    {
+      "id": "01_setup",
+      "service": "workspace",
+      "properties": {
+        "source_path": "D:/code-templates/databricks/notebooks/01_setup",
+        "path": "/Users/rajasekhar.thiru@tigeranalytics.com/code-templates/01_setup",
+        "object_type": "DIRECTORY"
+      }
+    },
+    {
+      "id": "02_delta",
+      "service": "workspace",
+      "properties": {
+        "source_path": "D:/code-templates/databricks/notebooks/02_delta",
+        "path": "/Users/rajasekhar.thiru@tigeranalytics.com/code-templates/02_delta",
+        "object_type": "DIRECTORY"
+      }
+    },
+    {
+      "id": "notebooks",
+      "service": "workspace",
+      "properties": {
+        "source_path": "D:/code-templates/databricks/notebooks/03_reference_notebooks/python",
+        "path": "/Users/rajasekhar.thiru@tigeranalytics.com/code-templates/03_reference_notebooks/python",
+        "object_type": "DIRECTORY"
+      }
+    },
+    {
+      "id": "databricks_notebooks",
+      "service": "dbfs",
+      "properties": {
+        "source_path": "D:/code-templates/databricks/notebooks/03_reference_notebooks/python",
+        "path": "dbfs:/FileStore/code-templates/databricks/notebooks/03_reference_notebooks/python",
+        "is_dir": true
+      }
+    },
+    {
+      "id": "ct_deploy",
+      "service": "dbfs",
+      "properties": {
+        "source_path": "D:/code-templates/deploy",
+        "path": "dbfs:/FileStore/code-templates/deploy",
+        "is_dir": true
+      }
+    },
+    {
+      "id": "ct_notebooks",
+      "service": "dbfs",
+      "properties": {
+        "source_path": "D:/code-templates/notebooks",
+        "path": "dbfs:/FileStore/code-templates/notebooks",
+        "is_dir": true
+      }
+    },
+    {
+      "id": "ct_production",
+      "service": "dbfs",
+      "properties": {
+        "source_path": "D:/code-templates/production",
+        "path": "dbfs:/FileStore/code-templates/production",
+        "is_dir": true
+      }
+    },
+    {
+      "id": "ct_src",
+      "service": "dbfs",
+      "properties": {
+        "source_path": "D:/code-templates/src",
+        "path": "dbfs:/FileStore/code-templates/src",
+        "is_dir": true
+      }
+    },
+    {
+      "id": "ct_setup_cfg",
+      "service": "dbfs",
+      "properties": {
+        "source_path": "D:/code-templates/setup.cfg",
+        "path": "dbfs:/FileStore/code-templates/setup.cfg",
+        "is_dir": false
+      }
+    },
+    {
+      "id": "ct_setup_py",
+      "service": "dbfs",
+      "properties": {
+        "source_path": "D:/code-templates/setup.py",
+        "path": "dbfs:/FileStore/code-templates/setup.py",
+        "is_dir": false
+      }
+    },
+    {
+      "id": "ct_tasks_py",
+      "service": "dbfs",
+      "properties": {
+        "source_path": "D:/code-templates/tasks.py",
+        "path": "dbfs:/FileStore/code-templates/tasks.py",
+        "is_dir": false
+      }
+    }
+  ]
+}

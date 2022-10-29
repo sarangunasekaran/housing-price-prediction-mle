@@ -1,0 +1,19 @@
+channels:
+- defaults
+- conda-forge
+dependencies:
+- tpot==0.11.5
+- deap==1.3.1
+- stopit==1.1.2
+- tqdm==4.48.2
+- safety==1.9.0
+- dparse==0.5.1
+- toml==0.10.1
+- invoke==1.3.0
+- mlxtend==0.17.3
+- eli5==0.10.1
+- tabulate==0.8.7
+- mlflow==1.10.0
+- pip:
+  - graphviz==0.14
+  - update-checker==0.18.0
